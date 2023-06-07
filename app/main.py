@@ -28,7 +28,7 @@ app = FastAPI()
 
 @app.post("/ask")
 async def ask_bard(query: Query, authorization: Annotated[str | None, Header()] = None):
-    async with Surreal("ws://localhost:8080/rpc") as db:
+    async with Surreal("ws://surrealdb/rpc") as db:
         await db.signin({"user": "root", "pass": "root"})
         await db.use("test", "test")
         token=authorization
