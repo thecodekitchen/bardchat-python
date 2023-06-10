@@ -1,0 +1,21 @@
+services:
+  bardchat:
+    image: "codekitchenxyz/bardchat:0.2.0"
+    ports:
+      - 8000:8000
+    links:
+      - "surrealdb"
+    depends_on:
+      - surrealdb
+    networks:
+      - bardnet
+      
+  surrealdb:
+    image: "codekitchenxyz/surrealdb:memory"
+    ports:
+      - 8080:8080
+    networks:
+      - bardnet
+
+networks:
+  bardnet:
