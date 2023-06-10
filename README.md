@@ -15,3 +15,5 @@ docker compose up
 ```
 If you get a permission error, simply add 'sudo' to the beginning of the command.
 This stack has so far only been tested locally on Linux, but Windows instructions should be coming soon.
+
+To start the back end concurrently with the front end, follow the optional step 3.5 in the readme at [bardchat-flutter](https://github.com/thecodekitchen/bardchat-flutter).
