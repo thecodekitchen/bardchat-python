@@ -1,6 +1,6 @@
 # bardchat-python
 
-A back end application you can run locally to interact with a desktop build of bardchat-flutter.
+A back end application you can run locally to interact with a desktop build of [bardchat-flutter](https://github.com/thecodekitchen/bardchat-flutter).
 Cloud deployment code coming soon.
 
 # Instructions
@@ -14,4 +14,4 @@ cd into that directory, and run
 docker compose up
 ```
 If you get a permission error, simply add 'sudo' to the beginning of the command.
-This back end has so far only been tested on Linux, but Windows instructions should be coming soon.
+This stack has so far only been tested locally on Linux, but Windows instructions should be coming soon.
